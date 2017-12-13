@@ -258,6 +258,7 @@ input[required],
 textarea[required] {
 	border-color: #999;
 }
+/*
 button,
 input[type="button"],
 input[type="submit"] {
@@ -307,7 +308,7 @@ input[type="submit"]:active {
 	background-image: linear-gradient(top,#800,#a00);
 	color: #fff;
 }
-
+*/
 /* @group search */
 
 [role="search"] {
