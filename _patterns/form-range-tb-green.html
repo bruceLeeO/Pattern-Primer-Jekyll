@@ -1,0 +1,21 @@
+---
+layout: pattern
+title: form-range-tb-green.html
+---
+<style>
+  .green {
+    background: rgb(0,255,0);
+    color: rgb(255,255,255);
+  }
+</style>
+<script>
+	function updateGreen(val) {
+	  document.getElementById('greenInput').value=val;
+	  var rVal=document.getElementsByClassName("green");
+	  var newRGB = "rgb(0,"+val+",0)";
+	  rVal[0].style.background=newRGB;
+	}
+</script>
+<input type="range" name="rangeInput" min="0" max="255" onchange="updateGreen(this.value);">
+
+<input class="green" type="text" id="greenInput" value="255">

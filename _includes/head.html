@@ -1,31 +1,45 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- default CSS via adactio -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/global.css">
+  <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/global.css">-->
   <link rel="stylesheet" href="{{ site.baseurl }}/css/button/button.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/form/form.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/icon/icon.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/typography/typography.css">
 
   <!-- .pattern class CSS -->
   <style>
     .pattern {
         clear: both;
         overflow: hidden;
+        border-bottom: 1px solid;
     }
     .pattern .display {
-        width: 65%;
+        width: 55%;
         float: left;
+        padding: 2.5em;
+        height: auto;
     }
     .pattern .source {
-        width: 30%;
+        width: 35%;
         float: right;
+        background-color: #eeeeee;
+
+
+        text-align: center;
+        font-size: 1.2em;
+        height: auto;
     }
     .pattern .source textarea {
-        width: 90%;
+        width: 100%;
+        height: 15em;
     }
   </style>
 
   {% include fonts.html %}
+  {% include icon-github.html username="jekyll" %}
   <script src="https://use.fontawesome.com/8d78942c92.js"></script>
 </head>

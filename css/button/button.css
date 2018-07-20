@@ -1,4 +1,3 @@
-
 /* class-less button style */
 button,
 input[type="button"],
@@ -36,7 +35,6 @@ input[type="submit"]:focus {
 	background-image: -moz-linear-gradient(top,#d04,#b02);
 	background-image: -o-linear-gradient(top,#d04,#b02);
 	background-image: linear-gradient(top,#d04,#b02);
-
 	color: #fff;
 }
 button:active,
@@ -49,21 +47,9 @@ input[type="submit"]:active {
 	background-image: linear-gradient(top,#800,#a00);
 	color: #fff;
 }
-/*
-.successbutton {
-    background-color: #cfc;
-    border-color: #9c9;
-    color: #000;
-}
-.errorbutton {
-    background-color: #fcc;
-    border-color: #c99;
-    color: #000;
-}
-*/
 
 
-/* Default */
+/* class button style */
 .button {
   display: inline-block;
   width: auto;
@@ -91,10 +77,11 @@ input[type="submit"]:active {
 }
 
 .button--type-div {
-  color: #ffffff;
+  background-color: red;
 }
-.button--type-div {
-  /*background-color: #acb6bf;*/
+.button--type-a {
+  background-color: yellow;
+  color: #51d0ef;
 }
 
 /* Colors */
@@ -154,51 +141,35 @@ input[type="submit"]:active {
 .button-icon-right {
   margin-left: 4px;
 }
-
+/*
 a {
 	text-decoration: none;
 	color: #000;
 }
-
-.button--size-sm {
-	width: 10%;
-	height: auto;
-}
-
-.button--size-md {
-	width: 25%;
-	height: auto;
-}
-
-.button--size-lg {
-	width: 50%;
-	height: auto;
-}
-/*
-input[type="button"].successbutton {
-    background-color: #cfc;
-    border-color: #9c9;
-    color: #000;
-}
-input[type="button"].errorbutton {
-    background-color: #fcc;
-    border-color: #c99;
-    color: #000;
-}
-
-button:hover,
-button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus {
-	outline: none;
-	background-color: #c03;
-	background-image: -webkit-linear-gradient(0% 0%,0% 100%,from(#d04),to(#b02));
-	background-image: -moz-linear-gradient(top,#d04,#b02);
-	background-image: -o-linear-gradient(top,#d04,#b02);
-	background-image: linear-gradient(top,#d04,#b02);
-
-	color: #fff;
-}
 */
+.button--size-small {
+  width: 10em;
+}
+
+.button--size-medium {
+  width: 48%;
+}
+
+.button--size-large {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .button {
+    width: 100%;
+  }
+  .button--type-div {
+    width: 82%;
+  }
+  .button--type-a {
+    width: 82%;
+  }
+  button, input[type="submit"], input[type="button"], a {
+    width: 100%;
+  }
+}

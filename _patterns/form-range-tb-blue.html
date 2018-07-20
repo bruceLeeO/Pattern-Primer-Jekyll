@@ -1,0 +1,21 @@
+---
+layout: pattern
+title: form-range-tb-blue.html
+---
+<style>
+  .blue {
+    background: rgb(0,0,255);
+    color: rgb(255,255,255);
+  }
+</style>
+<script>
+	function updateBlue(val) {
+	  document.getElementById('blueInput').value=val;
+	  var rVal=document.getElementsByClassName("blue");
+	  var newRGB = "rgb(0,0,"+val+")";
+	  rVal[0].style.background=newRGB;
+	}
+</script>
+<input type="range" name="rangeInput" min="0" max="255" onchange="updateBlue(this.value);">
+
+<input class="blue" type="text" id="blueInput" value="255">
