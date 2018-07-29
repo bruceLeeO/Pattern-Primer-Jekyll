@@ -32,5 +32,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-keep_files: 
-  - _site
+destination: ./blog/_site
